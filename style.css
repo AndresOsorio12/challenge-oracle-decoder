@@ -1,14 +1,18 @@
 body{
     background: #E9ECF8;
+}    
+
+.texto-ingresado, .mensaje, .boton, .rodapie, .ingresar-texto, .no-encontrado{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .logo{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
     width: 120px;
     height: 48px;
     left: 40px;
@@ -16,67 +20,88 @@ body{
 }  
 
 .texto-ingresado{
-    position: relative;
-    display: block;
+    position: absolute;
+    display: flex;
     width: 577px;
     height: 48px;
     left: 240px;
     top: 168px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     color: #0A3871;
     border:none;
     background: transparent;
+    border-style: none;
 }
 
 ::placeholder { color: #0A3871; }
 
+.rectangulo{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    border-radius: 32px;
+}
+
+.munheco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+.no-encontrado{
+    position: absolute;
+    width: 336px;
+    height: 58px;
+    left: 1032px;
+    top: 619px;  
+    color: #343A40;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ingresar-texto{
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    left: 1032px;
+    top: 693px;  
+    color: #495057;
+    font-size: 16px;
+    text-align: center;
+}
+
 .mensaje{
-    position: relative;
-    display: block;
+    position:absolute;
     width: 205px;
     height: 18px;
     left: 240px;
-    top: 168px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    top: 860px;
     font-size: 12px;
-    line-height: 150%;
     color: #495057;
     opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .boton{
-    position: relative;
-    display: block;
-    flex-direction: row;
-    align-items: flex-start;
+    position: absolute;
     padding: 24px;
-    gap: 8px;
     width: 328px;
     height: 67px;
     left: 240px;
-    top: 168px;
+    top: 885px;
     border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 #boton-e{
+
     background: #0A3871;
     border: 1px solid #0A3871;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -85,28 +110,26 @@ body{
 }
 
 #boton-d{
+    left: 592px;
     background: #D8DFE8;
     border: 1px solid #0A3871;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: #0A3871;
 }
 
-footer{
-    text-align: center;
-    padding: 40px;
-}
-
-.rodapie{
-    position: relative;
+.rodapie {
+    position: absolute;
     color:#495057;
+    text-align: center;
     font-size: 12px;
     margin: 10px;
-    left: 240px;
-    top: 168px;
+    top: 990px;
+    left: 700px;
+}
+
+#correo{
+    top: 1010px;
+    left: 720px;
 }

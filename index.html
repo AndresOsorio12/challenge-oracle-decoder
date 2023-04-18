@@ -3,7 +3,7 @@
     <head>
         <meta chatset="UTF-8">
         <title>Encriptador de texto - Alura Challenges ONE</title>
-        <link rel="stylesheet" href="reset.css">
+        <!--link rel="stylesheet" href="reset.css"-->
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,13 @@
         <main class="main">
             <section>
                 <textarea class="texto-ingresado" placeholder="Ingrese el texto aqui"></textarea required>
+                <div class="rectangulo"></div>
+                <div>
+                    <img class="munheco" src="imagenes/Munheco.png">
+                    <label for="no-encontrado" class="no-encontrado">Ningún mensaje fue encontrado</label>
+                    <label for="ingresar-texto" class="ingresar-texto">Ingresa el texto que desees encriptar o desencriptar.</label>
+                </div>
+
                 <label for="mensaje" class="mensaje">Solo letras minúsculas y sin acentos</label>
                 <input class="boton" id="boton-e" type="submit" value="Encriptar" >
                 <input class="boton" id="boton-d" type="submit" value="Desencriptar">
@@ -27,8 +34,8 @@
             </section> 
         </main>
         <footer>
-            <p class="rodapie">Desarrollado por Andres Osorio</p>
-            <p class="rodapie">Correo: anda_1709@hotmail.com </p>
+            <p class="rodapie">Desarrollado por Andres Osorio Lozada</p>
+            <p class="rodapie" id="correo">Correo: anda_1709@hotmail.com</p>
         </footer>
 
     </body>
