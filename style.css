@@ -2,7 +2,7 @@ body{
     background: #E9ECF8;
 }    
 
-.texto-ingresado, .mensaje, .boton, .rodapie, .ingresar-texto, .no-encontrado{
+.texto-ingresado, .mensaje, .boton, .rodapie, .ingresar-texto, .no-encontrado, .texto{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -23,7 +23,7 @@ body{
     position: absolute;
     display: flex;
     width: 577px;
-    height: 48px;
+    height: 60%;
     left: 240px;
     top: 168px;
     font-size: 32px;
@@ -31,7 +31,13 @@ body{
     color: #0A3871;
     border:none;
     background: transparent;
-    border-style: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.texto-ingresado:focus,.texto-ingresado:active,.texto:focus, .texto:active{
+    border: none;
+    outline: none;
 }
 
 ::placeholder { color: #0A3871; }
@@ -44,6 +50,20 @@ body{
     top: 40px;
     background: #FFFFFF;
     border-radius: 32px;
+}
+
+#texto{
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 1032px;
+    top: 72px;
+    font-size: 24px;
+    color: #495057;
+    border:none;
+    background: transparent;
+    resize: none;
+    overflow: hidden;
 }
 
 .munheco{
@@ -99,19 +119,27 @@ body{
 }
 
 #boton-e{
-
     background: #0A3871;
     border: 1px solid #0A3871;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
-    
 }
 
 #boton-d{
     left: 592px;
     background: #D8DFE8;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+
+#botonCopiar{
+    left: 1036px;
+    background: #FFFFFF;
     border: 1px solid #0A3871;
     font-size: 16px;
     line-height: 19px;

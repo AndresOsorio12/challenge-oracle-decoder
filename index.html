@@ -2,8 +2,8 @@
 <html lang="es">
     <head>
         <meta chatset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Encriptador de texto - Alura Challenges ONE</title>
-        <!--link rel="stylesheet" href="reset.css"-->
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,27 +16,26 @@
         </header>
         <main class="main">
             <section>
-                <textarea class="texto-ingresado" placeholder="Ingrese el texto aqui"></textarea required>
+                <textarea class="texto-ingresado" placeholder="Ingrese el texto aqui" id="textoIngresado" cols="30" rows="10"></textarea>
                 <div class="rectangulo"></div>
                 <div>
-                    <img class="munheco" src="imagenes/Munheco.png">
-                    <label for="no-encontrado" class="no-encontrado">Ningún mensaje fue encontrado</label>
-                    <label for="ingresar-texto" class="ingresar-texto">Ingresa el texto que desees encriptar o desencriptar.</label>
+                    <textarea class="texto" id="texto" style="display:none"></textarea>
+                    <img class="munheco" id="munheco" src="imagenes/Munheco.png">
+                    <label for="no-encontrado" class="no-encontrado" id="noEncontrado">Ningún mensaje fue encontrado</label>
+                    <label for="ingresar-texto" class="ingresar-texto" id="ingresarTexto">Ingresa el texto que desees encriptar o desencriptar.</label>
+                    <input class="boton" id="botonCopiar" type="submit" value="Copiar"  style="display:none;" onclick="copiar()">
                 </div>
 
                 <label for="mensaje" class="mensaje">Solo letras minúsculas y sin acentos</label>
-                <input class="boton" id="boton-e" type="submit" value="Encriptar" >
-                <input class="boton" id="boton-d" type="submit" value="Desencriptar">
-            </section>
+                <input class="boton" id="boton-e" type="submit" value="Encriptar" onclick="encriptador()">
+                <input class="boton" id="boton-d" type="submit" value="Desencriptar" onclick="desencriptador()">
 
-            <section>
-                <div id="texto" style="display:none;"></div>
-            </section> 
+            </section>
         </main>
         <footer>
             <p class="rodapie">Desarrollado por Andres Osorio Lozada</p>
             <p class="rodapie" id="correo">Correo: anda_1709@hotmail.com</p>
         </footer>
-
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
